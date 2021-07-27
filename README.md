@@ -17,4 +17,6 @@ docker push arkdevnet/drupal-8-blt-ci:<PHP.VERSION.MAJORVERSION>
   * PHP: 7.4
   * Extensions: gd (libpng support only), pdo-mysql and pecl-mcrypt-1.0.4
   * Composer: 1.10.22 at /usr/local/bin/composer
-  
+* **7.4.1**
+  * Same features as 7.4.0
+  * Add `patch` binary to apply composer patches.
