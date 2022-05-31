@@ -20,3 +20,6 @@ docker push arkdevnet/drupal-8-blt-ci:<PHP.VERSION.MAJORVERSION>
 * **7.4.1**
   * Same features as 7.4.0
   * Add `patch` binary to apply composer patches.
+* **7.4.4**
+  * Same features as 7.4.1
+  * Use composer v2.2.6
