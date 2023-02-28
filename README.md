@@ -26,3 +26,7 @@ docker push arkdevnet/drupal-8-blt-ci:<PHP.VERSION.MAJORVERSION>
 * **7.4.5** 
   * Same features as 7.4.1
   * Use composer v2.2.6
+* **8.1.0**
+  * OS: Alpine 3.16
+  * PHP: 8.1.10
+  * Composer: v2.2.6
