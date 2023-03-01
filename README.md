@@ -30,3 +30,6 @@ docker push arkdevnet/drupal-8-blt-ci:<PHP.VERSION.MAJORVERSION>
   * OS: Alpine 3.16
   * PHP: 8.1.10
   * Composer: v2.2.6
+* **8.1.1**
+  * Same features as 8.1.0
+  * Use pecl compiled `mcrypt` for compitability with PHP API version.

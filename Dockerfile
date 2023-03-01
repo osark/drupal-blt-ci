@@ -1,10 +1,9 @@
 FROM php:8.1.10-cli-alpine3.16
 
-# RUN apk update && apk add --no-cache php7-gd-7.4.21 php7-pdo_mysql-7.4.21 php7-pecl-mcrypt-1.0.4 git
-# RUN apk update && apk search --no-cache php7-gd php7-pdo_mysql php70-pecl-mcrypt git
-RUN apk update && apk add --no-cache autoconf php8-gd php8-pecl-mcrypt php8-pdo_mysql git zlib-dev libpng-dev patch php8-mysqli openssh rsync \
+RUN apk update && apk add --no-cache autoconf  gcc make libc-dev  libmcrypt-dev php8-gd php8-pdo_mysql git zlib-dev libpng-dev patch php8-mysqli php8-zip openssh rsync \
   && docker-php-ext-configure gd \
-  && echo "extension=/usr/lib/php8/modules/mcrypt.so" > /usr/local/etc/php/conf.d/mcrypt.ini \
+  && printf "\n" | pecl install mcrypt \
+  && echo "extension=/usr/local/lib/php/extensions/no-debug-non-zts-20210902/mcrypt.so" > /usr/local/etc/php/conf.d/mcrypt.ini \
   && docker-php-ext-install pdo_mysql gd
 
 # Install Composer
