@@ -33,3 +33,7 @@ docker push arkdevnet/drupal-8-blt-ci:<PHP.VERSION.MAJORVERSION>
 * **8.1.1**
   * Same features as 8.1.0
   * Use pecl compiled `mcrypt` for compitability with PHP API version.
+* **8.2.13**
+  * OS: Apline: 13.18
+  * PHP: 8.2.13
+  * Composer: V2.2.6
